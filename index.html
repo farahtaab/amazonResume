@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AMAZON RESUME</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <div class="top">
         <div class="header-left">
           <div>
-            <img src="Amazon_logo.svg" alt="Logo-amazon" />
+            <img src="./imagenes/Amazon_logo.svg" alt="Logo-amazon" />
             <a href="Amazon_logo.svg">hire Her</a>
           </div>
           <div class="shop">
@@ -49,7 +50,8 @@
               </div>
               <div class="cart">
                 <p>
-                  <span><img src="carrito.webp" alt="" /></span>Cart ▼
+                  <span><img src="./imagenes/carrito.webp" alt="" /></span>Cart
+                  ▼
                 </p>
               </div>
               <div class="wishList">
@@ -77,8 +79,110 @@
           <span>Instant update for you: </span> June 8th 2024: After 2 months
           and 1,500,000 visitors, I've found THE job! Thank you!
           <a href=""> More info here</a> . I'm also <a href="">on twitter</a>.
-          <br> See the original product page.
+          <br />
+          See the original product page.
         </p>
+      </div>
+      <div class="containerImage">
+        <div class="child-1">
+          <div class="image-viewer">
+            <div class="thumbnails">
+              <img
+                class="thumbnail"
+                src="./imagenes/yo.jpg"
+                alt="Image 1"
+                onclick="changeImage('./imagenes/yo.jpg')"
+              />
+              <img
+                class="thumbnail"
+                src="./imagenes/yo.jpg"
+                alt="Image 2"
+                onclick="changeImage('./imagenes/yo.jpg')"
+              />
+              <img
+                class="thumbnail"
+                src="./imagenes/carrito.webp"
+                alt="Image 3"
+                onclick="changeImage('./imagenes/carrito.webp')"
+              />
+              <img
+                class="thumbnail"
+                src="./imagenes/Amazon_logo.svg"
+                alt="Image 4"
+                onclick="changeImage('./imagenes/Amazon_logo.svg')"
+              />
+            </div>
+            <div class="large-image">
+              <img id="main-image" src="./imagenes/yo.jpg" alt="Large View" />
+            </div>
+          </div>
+        </div>
+        <div class="child-2">
+          <h3>Farah Taounza, Front-end developer</h3>
+          <p>by <a href="">Farah Taounza</a></p>
+          <p>
+            <img
+              id="estrellas"
+              src="./imagenes/estrellas.png"
+              alt="estrellas"
+            />☑ <a href="">(5 previous positions) </a> |
+          </p>
+          <hr />
+          <h4 id="red">Currently unavailable.</h4>
+          <p>We don't know when or if this item will be back in stock.</p>
+          <ul>
+            <li>Dual competence: technical-management</li>
+            <li>5+ years working on web products</li>
+            <li>Entrepreneurial mindset</li>
+            <li>"Strong Generalist"</li>
+            <li>Trilingual EN/FR/ES</li>
+          </ul>
+          <h4 id="orange">Take a Trip with Farah</h4>
+          <p>
+            Visit the <a href="">Avocado Travel blog</a> (FR) for our full
+            selection of <a href="">Japan</a>, <a href="">Thailand</a>,
+            <a href="">Airlines</a> articles and much more.
+            <a href="">Travel now</a>.
+          </p>
+        </div>
+        <div class="child-3">
+          <h4>Have one to sell?</h4>
+          <div class="containerAzul">
+            <button>Add to Wish List | ▼</button>
+            <button>Add to Wedding Registry</button>
+            <button>
+              my <img src="./imagenes/linkedn.png" alt="linkedn" />profile
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="bought-Together">
+        <h4>Frequently Bought Together</h4>
+        <div id="pack">
+          <img src="./imagenes/yo.jpg" alt="YO" />
+          <span>+</span>
+          <img src="./imagenes/jeep.png" alt="YO" />
+          <span>+</span>
+          <img src="./imagenes/yate.webp" alt="YO" />
+          <button>Add all three to the Wish List</button>
+        </div>
+        <input type="checkbox" checked />
+        <label for="uno"
+          ><b>This item:</b> Philippe Dubost, Web Product Manager</label
+        ><br />
+        <input type="checkbox" checked />
+        <label for="dos"
+          ><a href="">Onitsuka Tiger Mexico 66 by Asics</a> by Asics
+          <span>$169.99</span></label
+        ><br />
+        <input type="checkbox" checked />
+        <label for="tres"> <a href="">Airline Tickets</a> by Airline</label
+        ><br /><br />
+      </div>
+      <hr />
+      <div class="product-details">
+        <h4>Product Details</h4>
       </div>
     </main>
   </body>

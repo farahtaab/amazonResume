@@ -7,7 +7,7 @@ img{
 }
 
 header{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(244, 244, 244);
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -53,7 +53,7 @@ nav > a:first-child{
 
 #buscador{
     height: 16px;
-    width: 860px;
+    width: 830px;
 }
 
 .account{
@@ -79,7 +79,7 @@ nav > a:first-child{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 14px;
-    margin-top: -15px;
+    margin-top: -20px;
 }
 
 .menuCompleto > a{
@@ -101,11 +101,141 @@ nav > a:first-child{
 
 .update > p{
     margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.update > p > span {
+.update > p > span, #orange {
     color: rgb(199, 133, 12);
     font-weight: bold;
+}
+
+.containerImage{
+    margin: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image-viewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.large-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.thumbnails .thumbnail {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s;
+}
+
+.thumbnails .thumbnail:hover {
+    border: 2px solid #000;
+}
+
+.child-2{
+    width: 920px;
+    height: 300px;
+}
+
+.child-2 > h3, .child-2 > p, .child-2 > h4{
+    margin: 0;
+}
+
+#estrellas{
+    height: 20px;
+}
+
+.child-2 > p:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#red{
+    color: rgb(123, 13, 13);
+    font-weight: bold;
+}
+
+.child-3{
+    height: 160px;
+    width: 200px;
+    background-color: rgb(184, 237, 238);
+    border-radius: 13px;
+}
+
+.containerAzul{
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.child-3 > h4{
+    text-align: center;
+    margin: 0;
+    background-color: rgb(189, 189, 255);
+    border-radius: 13px 13px 0px 0px;
+    padding: 7px;
+}
+
+.child-3 > .containerAzul > button{
+    border-radius: 13px;
+    padding: 5px 10px;
+    bottom: 1px solid rgb(222, 221, 221);
+    font-size: 12px;
+}
+
+.child-3 > .containerAzul > button:last-child{
+    display: flex;
+    align-items: center;
+}
+
+.bought-Together{
+    padding: 0px 30px;
+}
+
+#pack{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.bought-Together > h4{
+    color: rgb(199, 133, 12);
+}
+
+#pack > img{
+    height: 70px;
+}
+
+#pack > button{
+    color: blue;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 3px;
 }
 
 /* Media query para pantallas pequeñas */
@@ -118,6 +248,14 @@ nav > a:first-child{
         flex-direction: column;
     }
 
+    .search{
+        margin-top: 10px;
+    }
+
+    .containerImage{
+        justify-content: center;
+    }
+
 
   }
   
@@ -127,4 +265,11 @@ nav > a:first-child{
         width: 300px;
     }
 
+    .search{
+        margin-top: 10px;
+    }
+
+    .containerImage{
+        justify-content: center;
+    }
   }
